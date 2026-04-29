@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>TLB Tuyia Advocates | Tuyia Group</title>
+<link rel="stylesheet" href="../style.css"/>
+<style>
+/* Law firm specific overrides */
+.advocates-hero-img img { filter: brightness(.38); }
+
+/* Case highlight box */
+.case-band { background: var(--navy); border-top: 0.5px solid var(--border); }
+.case-inner { max-width: 1100px; margin: 0 auto; padding: 5rem 3.5rem; }
+.case-box {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+  align-items: start; background: var(--navy2);
+  border: 0.5px solid var(--gold4); border-radius: 12px;
+  overflow: hidden; margin-top: 2.5rem;
+}
+.case-photo { height: 100%; min-height: 340px; overflow: hidden; }
+.case-photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(.65); }
+.case-content { padding: 2.5rem 2.5rem 2.5rem 0; }
+.case-badge {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-size: 9px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--gold); background: var(--gold3); border: 0.5px solid var(--gold4);
+  padding: 5px 12px; border-radius: 2px; margin-bottom: 1.5rem;
+}
+.case-badge::before { content: '⚖'; font-size: 11px; }
+.case-h { font-family: var(--serif); font-size: 1.7rem; font-weight: 400; color: var(--cream); margin-bottom: 1rem; line-height: 1.25; }
+.case-meta { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.case-meta-item { font-size: 11px; color: var(--dim); display: flex; flex-direction: column; gap: .2rem; }
+.case-meta-item strong { font-size: 12px; color: var(--silver); font-weight: 500; }
+.case-body { font-size: 14px; color: var(--silver); line-height: 1.9; margin-bottom: 1.5rem; }
+.case-body p + p { margin-top: .9rem; }
+.case-outcome {
+  display: flex; align-items: flex-start; gap: .75rem;
+  background: var(--navy3); border: 0.5px solid var(--border2);
+  border-left: 2px solid var(--gold); border-radius: 6px; padding: 1rem 1.25rem;
+  font-size: 13px; color: var(--silver); line-height: 1.75;
+}
+.case-outcome strong { color: var(--cream); font-weight: 500; }
+
+/* Practice areas grid */
+.practice-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.2rem; margin-top: 2.5rem; }
+.pa-card {
+  background: var(--navy2); border: 0.5px solid var(--border);
+  border-radius: 10px; overflow: hidden; transition: border-color .25s;
+}
+.pa-card:hover { border-color: var(--gold4); }
+.pa-card-photo { height: 140px; overflow: hidden; }
+.pa-card-photo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(.65); transition: transform .5s; }
+.pa-card:hover .pa-card-photo img { transform: scale(1.06); filter: brightness(.8); }
+.pa-card-body { padding: 1.25rem 1.4rem 1.5rem; }
+.pa-ico { width: 34px; height: 34px; border-radius: 7px; background: var(--gold3); border: 0.5px solid var(--gold4); display: flex; align-items: center; justify-content: center; color: var(--gold); margin-bottom: 1rem; }
+.pa-ico svg { width: 14px; height: 14px; }
+.pa-h { font-size: 14px; font-weight: 500; color: var(--cream); margin-bottom: .4rem; }
+.pa-p { font-size: 12px; color: var(--dim); line-height: 1.75; }
+
+/* Why us strip */
+.why-band { background: var(--navy2); border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
+.why-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; margin-top: 2.5rem; background: var(--border); border-radius: 10px; overflow: hidden; }
+.why-card { background: var(--navy3); padding: 1.75rem 1.5rem; }
+.why-n { font-family: var(--serif); font-size: 2rem; font-weight: 400; color: var(--gold4); line-height: 1; margin-bottom: .75rem; }
+.why-h { font-size: 13px; font-weight: 500; color: var(--cream); margin-bottom: .4rem; }
+.why-p { font-size: 12px; color: var(--dim); line-height: 1.75; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="logo">
+    <div class="crest">TG</div>
+    <div><div class="logo-name">Tuyia Group</div><div class="logo-sub">Group of Companies</div></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html#about">About Group</a></li>
+    <li><a href="../index.html#companies">Our Companies</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <a href="../index.html#contact" class="nav-btn">Enquire Now</a>
+</nav>
+
+<!-- HERO -->
+<div class="svc-hero advocates-hero-img">
+  <img src="https://images.unsplash.com/photo-1593115057322-e94b77572f20?w=1600&q=80" alt="Kenyan court of law and legal advocacy"/>
+  <div class="svc-hero-overlay"></div>
+  <div class="svc-hero-text">
+    <a href="../index.html#companies" class="back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to Tuyia Group
+    </a>
+    <div class="svc-badge">Subsidiary 01 of 05 &nbsp;·&nbsp; Legal Services</div>
+    <h1 class="svc-hero-h"><em>TLB</em> Tuyia<br>Advocates</h1>
+    <p class="svc-hero-p">A Kenyan law firm providing expert legal representation, litigation, and advisory services — with proven experience in Environment &amp; Land Court proceedings, corporate law, and procedural competence matters.</p>
+    <div class="svc-btns">
+      <a href="tel:+254711305189" class="btn-gold">Call 0711 305 189</a>
+      <a href="mailto:info@tuyiagroup.co.ke" class="btn-outline">Email the Firm</a>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<div class="svc-intro-wrap">
+  <div class="svc-intro-grid">
+    <div class="svc-intro-text">
+      <div class="section-label">About TLB Tuyia Advocates</div>
+      <h2>Legal Expertise. Principled Advocacy. Kenyan Law.</h2>
+      <p>TLB Tuyia Advocates is the legal arm of Tuyia Group — a law firm grounded in Kenyan jurisprudence and committed to delivering rigorous, principled legal representation to individuals, companies, and institutions. Our advocates bring deep expertise across litigation, land law, environmental law, and corporate advisory.</p>
+      <p>We operate at the intersection of law and practice, ensuring that every client receives strategic legal counsel backed by thorough research, procedural precision, and an unwavering commitment to their interests. Whether in court or at the negotiating table, TLB Tuyia Advocates stands ready to represent you at the highest level.</p>
+    </div>
+    <div class="svc-intro-img">
+      <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&q=80" alt="Law library and legal research"/>
+    </div>
+  </div>
+</div>
+
+<!-- CASE HIGHLIGHT -->
+<div class="case-band">
+  <div class="case-inner">
+    <div class="section-label">Notable Case</div>
+    <div class="section-title">2024 Environment &amp; Land Court Matter</div>
+    <p class="section-desc">TLB Tuyia Advocates has appeared before Kenya's specialised land and environment tribunals, demonstrating competence in complex procedural and substantive matters.</p>
+
+    <div class="case-box">
+      <div class="case-photo">
+        <img src="https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?w=800&q=80" alt="Environment and Land Court Kenya legal proceedings"/>
+      </div>
+      <div class="case-content">
+        <div class="case-badge">2024 · Environment &amp; Land Court</div>
+        <h3 class="case-h">Procedural Competence Before the Environment &amp; Land Court</h3>
+        <div class="case-meta">
+          <div class="case-meta-item"><span>Year</span><strong>2024</strong></div>
+          <div class="case-meta-item"><span>Court</span><strong>Environment &amp; Land Court (ELC)</strong></div>
+          <div class="case-meta-item"><span>Jurisdiction</span><strong>Kenya</strong></div>
+          <div class="case-meta-item"><span>Focus Area</span><strong>Procedural Competence &amp; Land Law</strong></div>
+        </div>
+        <div class="case-body">
+          <p>In 2024, TLB Tuyia Advocates was engaged in proceedings before Kenya's Environment and Land Court — a specialised court established under Article 162(2)(b) of the Constitution of Kenya, 2010 to hear and determine disputes relating to the environment and land.</p>
+          <p>The matter centred on questions of <strong>procedural competence</strong> — specifically, whether the correct procedural frameworks had been followed in initiating and prosecuting the suit, and whether the court had been properly seized of jurisdiction to determine the matter on its merits. Such questions require a thorough command of both the Environment and Land Court Act, the Civil Procedure Rules, and established Kenyan case law on jurisdiction and locus standi.</p>
+          <p>TLB Tuyia Advocates provided rigorous legal research, filed substantive pleadings, and appeared to argue the procedural points before the Court — demonstrating the firm's capacity to handle technically demanding Environment and Land Court litigation with professional precision.</p>
+        </div>
+        <div class="case-outcome">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          <div><strong>Firm Capability Demonstrated:</strong> Procedural advocacy before the Environment &amp; Land Court, jurisdictional argumentation, and substantive land law litigation — underpinning TLB Tuyia Advocates' credibility in complex environment and property disputes.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRACTICE AREAS -->
+<div class="feat-wrap">
+  <div class="section">
+    <div class="section-label">Practice Areas</div>
+    <div class="section-title">Our Areas of Legal Expertise</div>
+    <div class="practice-grid">
+
+      <div class="pa-card">
+        <div class="pa-card-photo">
+          <img src="https://images.unsplash.com/photo-1443110189928-4448af4a2bc5?w=600&q=80" alt="Land and property law Kenya"/>
+        </div>
+        <div class="pa-card-body">
+          <div class="pa-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <div class="pa-h">Environment &amp; Land Law</div>
+          <p class="pa-p">Representation before the Environment and Land Court on land disputes, title challenges, compulsory acquisition, boundary conflicts, and environmental compliance matters.</p>
+        </div>
+      </div>
+
+      <div class="pa-card">
+        <div class="pa-card-photo">
+          <img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?w=600&q=80" alt="Civil litigation courtroom Kenya"/>
+        </div>
+        <div class="pa-card-body">
+          <div class="pa-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div class="pa-h">Civil Litigation &amp; Dispute Resolution</div>
+          <p class="pa-p">Commercial and civil dispute resolution across Kenyan courts — including debt recovery, breach of contract, injunctions, and declaratory orders.</p>
+        </div>
+      </div>
+
+      <div class="pa-card">
+        <div class="pa-card-photo">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80" alt="Corporate and commercial law"/>
+        </div>
+        <div class="pa-card-body">
+          <div class="pa-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg></div>
+          <div class="pa-h">Corporate &amp; Commercial Law</div>
+          <p class="pa-p">Company formation, commercial contracts, shareholder agreements, regulatory compliance, and advisory services for businesses operating in Kenya.</p>
+        </div>
+      </div>
+
+      <div class="pa-card">
+        <div class="pa-card-photo">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80" alt="Legal contracts and conveyancing"/>
+        </div>
+        <div class="pa-card-body">
+          <div class="pa-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+          <div class="pa-h">Conveyancing &amp; Property Transactions</div>
+          <p class="pa-p">Legal due diligence, sale agreements, transfer of title, lease negotiations, and all property transaction documentation under Kenyan land law.</p>
+        </div>
+      </div>
+
+      <div class="pa-card">
+        <div class="pa-card-photo">
+          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80" alt="Procurement legal advisory"/>
+        </div>
+        <div class="pa-card-body">
+          <div class="pa-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg></div>
+          <div class="pa-h">Procurement &amp; Public Law</div>
+          <p class="pa-p">Legal advisory on public procurement disputes, tender challenges before the Public Procurement Regulatory Authority, and administrative law matters.</p>
+        </div>
+      </div>
+
+      <div class="pa-card">
+        <div class="pa-card-photo">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80" alt="Legal advisory services Kenya"/>
+        </div>
+        <div class="pa-card-body">
+          <div class="pa-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <div class="pa-h">Legal Advisory &amp; Opinions</div>
+          <p class="pa-p">Written legal opinions, risk assessments, regulatory guidance, and ongoing retainer advisory for individuals, corporates, and institutions across Kenya.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery-wrap">
+  <div class="section">
+    <div class="section-label">The Firm</div>
+    <div class="section-title">Principled. Professional. Prepared.</div>
+    <div class="gallery-grid">
+      <div class="g-item g-big"><img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?w=900&q=80" alt="Legal professionals Kenya"/></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1581591524425-c7e0978865fc?w=500&q=80" alt="Court building Kenya"/></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500&q=80" alt="Legal documents and scales of justice"/></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=500&q=80" alt="Advocate professional"/></div>
+      <div class="g-item"><img src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?w=500&q=80" alt="Legal consultation"/></div>
+    </div>
+  </div>
+</div>
+
+<!-- PROCESS -->
+<div class="process-wrap">
+  <div class="section">
+    <div class="section-label">How We Work</div>
+    <div class="section-title">From Enquiry to Resolution</div>
+    <div class="process-grid">
+      <div class="p-step"><div class="p-num">1</div><div class="p-h">Initial Consultation</div><p class="p-p">We meet to understand your legal situation, assess the merits of your matter, and advise on the appropriate course of action.</p></div>
+      <div class="p-step"><div class="p-num">2</div><div class="p-h">Legal Research &amp; Strategy</div><p class="p-p">Our advocates conduct thorough legal research, analyse applicable statutes and case law, and develop a clear legal strategy.</p></div>
+      <div class="p-step"><div class="p-num">3</div><div class="p-h">Representation</div><p class="p-p">We prepare and file all necessary court documents, appear on your behalf, and advocate your position with precision and authority.</p></div>
+      <div class="p-step"><div class="p-num">4</div><div class="p-h">Resolution &amp; Follow-Through</div><p class="p-p">We guide you through judgment enforcement, settlement execution, or any appeal — ensuring the matter reaches a final, effective resolution.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY US -->
+<div class="why-band">
+  <div class="section">
+    <div class="section-label">Why TLB Tuyia Advocates</div>
+    <div class="section-title">What Sets Our Firm Apart</div>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-n">01</div><div class="why-h">Kenyan Law Specialists</div><p class="why-p">Our advocates are trained and practising in Kenyan law — with deep knowledge of local courts, procedure, and jurisprudence.</p></div>
+      <div class="why-card"><div class="why-n">02</div><div class="why-h">Proven Court Experience</div><p class="why-p">Demonstrated experience before the Environment &amp; Land Court and other superior courts — including complex procedural matters.</p></div>
+      <div class="why-card"><div class="why-n">03</div><div class="why-h">Multi-Disciplinary Insight</div><p class="why-p">Operating within Tuyia Group gives us unique commercial insight — enabling legal advice that is grounded in real business realities.</p></div>
+      <div class="why-card"><div class="why-n">04</div><div class="why-h">Client Confidentiality</div><p class="why-p">We uphold strict professional confidentiality standards. Every client matter is handled with absolute discretion and ethical rigour.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- CLIENTS -->
+<div class="clients-wrap">
+  <div class="section">
+    <div class="section-label">Who We Represent</div>
+    <div class="section-title">Our Client Base</div>
+    <p class="section-desc">TLB Tuyia Advocates represents a broad range of clients across Kenya's public and private sectors.</p>
+    <div class="tags">
+      <span class="tag">Individuals &amp; Families</span>
+      <span class="tag">Land Owners &amp; Developers</span>
+      <span class="tag">Private Companies</span>
+      <span class="tag">NGOs &amp; INGOs</span>
+      <span class="tag">Government Institutions</span>
+      <span class="tag">SMEs &amp; Startups</span>
+      <span class="tag">Contractors &amp; Suppliers</span>
+      <span class="tag">Procurement Entities</span>
+      <span class="tag">Investors &amp; Financiers</span>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="svc-cta-wrap">
+  <div class="svc-cta-img">
+    <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1600&q=80" alt="Kenyan law and justice"/>
+  </div>
+  <div class="svc-cta-content">
+    <div>
+      <div class="svc-cta-h">Do you need legal representation?</div>
+      <p class="svc-cta-p">Contact TLB Tuyia Advocates for a confidential consultation. We handle matters before Kenyan courts at all levels — with professionalism, precision, and principled advocacy.</p>
+    </div>
+    <div class="svc-cta-actions">
+      <a href="tel:+254711305189" class="btn-gold">Call 0711 305 189</a>
+      <a href="mailto:info@tuyiagroup.co.ke" class="btn-outline">info@tuyiagroup.co.ke</a>
+      <div class="svc-cta-note">TLB Tuyia Advocates · Part of Tuyia Group · Nairobi</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <div class="ft-crest">TG</div>
+    <div class="ft-name">Tuyia Group</div>
+    <div class="ft-sub">Group of Companies · Nairobi, Kenya</div>
+    <div class="ft-info">Industrial Area Road A · Nairobi<br>0711 305 189 · info@tuyiagroup.co.ke</div>
+  </div>
+  <div class="ft-col">
+    <h4>Our Companies</h4>
+    <ul>
+      <li><a href="advocates.html">TLB Tuyia Advocates</a></li>
+      <li><a href="procurement.html">Procurement Consultancy</a></li>
+      <li><a href="cleaning.html">Cleaning &amp; Facility Services</a></li>
+      <li><a href="meat.html">Meat &amp; Food Supply</a></li>
+      <li><a href="hardware.html">Hardware &amp; General Supplies</a></li>
+    </ul>
+  </div>
+  <div class="ft-col">
+    <h4>Quick Links</h4>
+    <ul>
+      <li><a href="../index.html#about">About the Group</a></li>
+      <li><a href="../index.html#values">Our Values</a></li>
+      <li><a href="../index.html#contact">Contact Us</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="ft-bar">
+  <div class="ft-copy">&copy; 2026 TLB Tuyia Advocates · Tuyia Group. All rights reserved.</div>
+  <div class="ft-copy">Industrial Area Road A, Nairobi, Kenya</div>
+</div>
+
+</body>
+</html>
